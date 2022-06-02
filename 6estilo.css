@@ -1,0 +1,493 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+/* ----------------------------HEADER------------------------------------------------- */
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25rem;
+  background-color: black;
+  z-index: 999;
+}
+
+.logoPrincipal {
+  display: flex;
+  align-content: center;
+  margin-left: 2rem;
+}
+
+.links {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  margin-right: 1rem;
+}
+
+.links li {
+  padding-right: 1.5rem;
+  display: inline-block;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.links li a {
+  color: white;
+  text-decoration: none;
+}
+
+.links li a:hover {
+  color: #e60009;
+  text-decoration: overline #e60009;
+}
+
+ul.navbar-nav.links.container-fluid {
+  width: 35rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+}
+
+
+/* ----------------------------------------------------------------------------- */
+
+body {
+
+  font-family: "Koulen", cursive;
+  color: white;
+}
+
+/* -----------------------------INDEX------------------------------------------------ */
+
+.bodyPrincipal {
+  background: #e60009;
+  margin-top: 5vh;
+  font-family: "Koulen", cursive;
+}
+
+.imagenPrincipal {
+  text-align: center;
+}
+
+.imgAbarth {
+
+  width: 80%;
+  height: auto;
+}
+
+/* ----------------------------CONTACTO------------------------------------------------- */
+
+.bodyContacto {
+  background-image: url("images/carlo-abarth.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Koulen", cursive;
+}
+
+.bodyFormulario {
+  display: grid;
+  grid-template-areas: "formulario formulario formulario";
+  grid-template-columns: auto auto 30%;
+  overflow-x: hidden;
+}
+
+.formulario {
+  height: 550px;
+  grid-area: 3/3;
+  color: #ffffff;
+  background-color: #e60009;
+  border: none;
+  text-align: center;
+  font-size: larger;
+}
+
+.botones :hover {
+  opacity: 0.5;
+}
+
+/* ----------------------------FICHA-TECNICA------------------------------------------------- */
+
+.bodyfichaTecnica {
+  font-family: "Koulen", cursive;
+  background: #e60009;
+  margin-bottom: 3rem;
+}
+
+.fichaTecnica {
+  width: 90%;
+  margin: 5% auto;
+  display: grid;
+  grid-template-areas:
+    "tabla video1"
+    "tabla video2"
+    "tabla video3";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: (3, auto);
+  gap: 2.5%;
+}
+
+.tabla {
+  grid-area: tabla;
+  text-align: center;
+  background-color: black;
+  border: none;
+  font-size: 1.25rem;
+}
+
+.video1 {
+  grid-area: video1;
+}
+
+.video2 {
+  grid-area: video2;
+}
+
+.video3 {
+  grid-area: video3;
+}
+
+/* ---------------------------FOTOS-------------------------------------------------- */
+
+.bodyFotos {
+
+  background: rgb(0, 0, 0);
+  font-family: "Koulen", cursive;
+  margin-top: 10vh;
+  overflow-x: hidden;
+}
+
+
+
+.fotos img {
+  opacity: 0.25;
+}
+
+.fotos img:hover {
+  opacity: 1;
+  border: #e60009 solid 2.5px;
+}
+
+
+/* ------------------------------HISTORIA----------------------------------------------- */
+
+.bodyHistoria {
+  margin-top: 10vh;
+  background: #000000;
+  background-size: cover;
+  font-family: "Koulen", cursive;
+}
+
+.historia {
+  width: 95%;
+  margin: 5% auto;
+  display: grid;
+  grid-template-areas:
+    "bioHistoria imgHistoria"
+    "textoHistoria textoHistoria ";
+  grid-template-columns: 70% auto;
+  grid-template-rows: (2, auto);
+}
+
+.textoHistoria {
+  margin: 1rem;
+  grid-area: textoHistoria;
+  text-align: justify;
+  font-size: 1.25rem;
+  color: rgb(255, 255, 255);
+}
+
+.textoHistoria h1 {
+  background: #e60009;
+  text-align: center;
+  -webkit-text-stroke: 1px #000000;
+  font-size: 3rem;
+}
+
+.imgHistoria {
+  background: #e60009;
+  display: flex;
+  align-content: center;
+  justify-content: right;
+  margin: 1rem;
+  grid-area: imgHistoria;
+}
+
+.bioHistoria {
+  grid-area: bioHistoria;
+  margin: 1rem;
+  text-align: justify;
+  font-size: 1.25rem;
+  color: rgb(255, 255, 255);
+}
+
+.bioHistoria h1 {
+  text-align: center;
+  background: #e60009;
+  -webkit-text-stroke: 1px #000000;
+  font-size: 3rem;
+}
+
+/* ---------------------------FOOTER-------------------------------------------------- */
+
+footer {
+  padding: 0.25rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  background-color: black;
+  position: relative;
+  z-index: 999;
+}
+
+footer img:hover {
+  opacity: 0.5;
+}
+
+/* ---------------------------RESPOSIVE DESIGN-------------------------------------------------- */
+/* ---------------------------RESPOSIVE DESIGN-------------------------------------------------- */
+/* ---------------------------RESPOSIVE DESIGN-------------------------------------------------- */
+
+@media only screen and (max-width: 600px) {
+  /* ----------------------------HEADER------------------------------------------------- */
+
+  header {
+    max-width: 100vw;
+
+  }
+
+  .logoPrincipal {
+    display: flex;
+    align-content: center;
+    margin-left: 1rem;
+  }
+
+  .links {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin-right: 1rem;
+  }
+
+  .links li {
+    padding-right: 1.5rem;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .links li a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .links li a:hover {
+    color: #e60009;
+    text-decoration: overline #e60009;
+  }
+
+  ul.navbar-nav.links.container-fluid {
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* -----------------------------INDEX------------------------------------------------ */
+
+  .bodyPrincipal {
+    background: #e60009;
+    font-family: "Koulen", cursive;
+  }
+  
+  .imagenPrincipal {
+    min-height: 100vh;
+  }
+
+  .imagenPrincipal img {
+    position: relative;
+    top: 30vh;
+    width: 70vh;
+    margin: 2vw -26vw;
+  }
+
+  /* -------------------------------HISTORIA---------------------------------------------- */
+
+  .bodyHistoria {
+    position: relative;
+    top: 5vh;
+    background: #000000;
+    background-size: cover;
+    font-family: "Koulen", cursive;
+  }
+
+  .historia {
+    width: 95%;
+    margin: 5% auto;
+    display: grid;
+    grid-template-areas:
+      "bioHistoria"
+      "imgHistoria"
+      "textoHistoria";
+    grid-template-columns: auto;
+    grid-template-rows: (3, auto);
+  }
+
+  .textoHistoria {
+    margin: 1rem;
+    grid-area: textoHistoria;
+    text-align: justify;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+  }
+
+  .textoHistoria h1 {
+    background: #e60009;
+    text-align: center;
+    -webkit-text-stroke: 1px #000000;
+    font-size: 2rem;
+  }
+
+  .imgHistoria {
+    background: #e60009;
+    display: flex;
+    align-content: center;
+    justify-content: right;
+    margin: 1rem;
+    grid-area: imgHistoria;
+  }
+
+  .bioHistoria {
+    grid-area: bioHistoria;
+    margin: 1rem;
+    text-align: justify;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+  }
+
+  .bioHistoria h1 {
+    text-align: center;
+    background: #e60009;
+    -webkit-text-stroke: 1px #000000;
+    font-size: 2rem;
+  }
+
+  /* ----------------------------FICHA-TECNICA------------------------------------------------- */
+
+  .bodyfichaTecnica {
+    position: relative;
+    top: 5vh;
+    font-family: "Koulen", cursive;
+    background: #e60009;
+    margin-top: 3rem;
+  }
+
+  .fichaTecnica {
+    width: 90%;
+    margin: 5% auto;
+    display: grid;
+    grid-template-areas:
+      "tabla"
+      " video1"
+      " video2"
+      " video3";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 5%;
+  }
+
+  .tabla {
+    width: 100%;
+    grid-area: tabla;
+    text-align: center;
+    background-color: black;
+    border: none;
+    font-size: 1rem;
+  }
+
+  .video1 {
+    width: 100%;
+    grid-area: video1;
+  }
+
+  .video2 {
+    width: 100%;
+    grid-area: video2;
+  }
+
+  .video3 {
+    width: 100%;
+    grid-area: video3;
+  }
+
+  /* ---------------------------FOTOS-------------------------------------------------- */
+
+  .bodyFotos {
+    position: relative;
+    background: rgb(0, 0, 0);
+    font-family: "Koulen", cursive;
+    overflow-x: hidden;
+  }
+
+
+  .fotos img {
+    display: flex;
+
+    max-width: 500px;
+    max-height: auto;
+    opacity: 0.25;
+  }
+
+  .fotos img:hover {
+    opacity: 1;
+    border: #e60009 solid 0.25rem;
+  }
+
+  .col{
+    padding: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* ----------------------------CONTACTO------------------------------------------------- */
+
+  .bodyContacto {
+    position: relative;
+    top: 5vh;
+    background-image: url("images/carlo-abarth.jpg");
+    background-size: cover;
+    font-family: "Koulen", cursive;
+  }
+
+  .bodyFormulario {
+    display: grid;
+    grid-template-areas: "formulario formulario formulario";
+    grid-template-columns: 50% auto auto;
+    overflow-x: hidden;
+    align-content: center;
+  }
+
+  .formulario {
+    grid-area: 1;
+    color: #ffffff;
+    background-color: #e60009;
+    border: none;
+    text-align: center;
+    font-size: larger;
+  }
+
+  .botones :hover {
+    opacity: 0.5;
+  }
+}
